@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style/style.css">
+		<link rel="icon" href="./assets/favicon.ico"/>
+		<title>Festival Films de Plein Air</title>
+	</head>
+	<body>
+
+		<header>
+			<nav>
+				<input type="checkbox" name="hamburger_menu_checkbox" id="hamburger-menu-checkbox">
+				<div class="hamburger__menu__line"></div>
+				<img src="./assets/favicon.ico" alt="camera_recorder" class="logo"/>
+				<ul class="menu">
+					<li>
+						<a href="#home">Accueil</a>
+					</li>
+					<li>
+						<a href="#association">A propos de nous</a>
+					</li>
+					<li>
+						<a href="#news-feed">Actualités</a>
+					</li>
+					<li>
+						<a href="#movies">Les Films</a>
+					</li>
+					<li>
+						<a href="#map">Le lieu</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home">
+				<div class="home__content">
+					<div class="home__title">
+						<h2>Festival Films de Plein Air</h2>
+						<p>Les films d'auteurs en extérieur</p>
+					</div>
+					<button type="button" disabled>
+						Réserver une séance
+						<input type="checkbox" name="reservation_checkbox" id="reservation-checkbox">
+					</button>
+					<dialog open id="dialog">
+						<fieldset>
+							<legend>Réserver une séance</legend>
+							<form method="dialog">
+								<label for="name">Nom</label>
+								<input type="text" name="name" id="name" placeholder="Votre nom" required>
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" placeholder="Votre email" required>
+								<label for="phone">Téléphone</label>
+								<input type="tel" name="phone" id="phone" placeholder="Votre téléphone" required>
+								<label for="date">Date</label>
+								<input type="date" name="date" id="date" required>
+								<label for="time">Heure</label>
+								<input type="time" name="time" id="time" required>
+								<label for="movie">Film</label>
+								<select name="movie" id="movie" required>
+									<option value="movie1">Film 1</option>
+									<option value="movie2">Film 2</option>
+									<option value="movie3">Film 3</option>
+								</select>
+								<label for="seats">Nombre de places</label>
+								<input type="number" name="seats" id="seats" min="1" max="10" required>
+								<button type="submit">Réserver</button>
+							</form>
+						</fieldset>
+					</dialog>
+				</div>
+			</section>
+
+			<section id="association">
+				<h2>A propos de nous</h2>
+				<p>Jennifer Edwards est une passionnée d’art et de cinéma. Elle a fondé l’association “Les Films de Plein Air” dans le but de donner accès à tous aux grands films d’auteur. Avec son équipe, elle organise des projections en plein air dans des lieux exceptionnels, pour offrir une expérience cinématographique unique.</p>
+
+				<p>L’association “Les Films de Plein Air” a pour mission de promouvoir le cinéma d’auteur et de rendre accessible à tous les grands films du patrimoine cinématographique. Elle organise des projections en plein air dans des lieux emblématiques, pour offrir une expérience cinématographique unique et conviviale.</p>
+
+				<p>Du 5 au 8 août, l’association organise un cinéma en plein air dans le Parc Monceau, Boulevard de Courcelle à Paris. Cet événement est gratuit, mais les personnes intéressées sont invitées à s’inscrire pour réserver leur place. Venez profiter d’une soirée cinéma sous les étoiles dans un cadre exceptionnel !</p>
+
+				<p>Le Parc Monceau est un lieu idéal pour une soirée cinéma en plein air. Avec ses pelouses verdoyantes et ses arbres majestueux, il offre un cadre magnifique pour une soirée sous les étoiles. Les projections auront lieu du 5 au 8 août, et la programmation promet d’être riche et variée.</p>
+
+				<p>Pour participer à cet événement, il suffit de s’inscrire sur le site de l’association “Les Films de Plein Air”. Les places sont limitées, alors n’hésitez pas à réserver rapidement pour être sûr d’avoir une place. L’événement est gratuit, mais les dons sont les bienvenus pour soutenir l’action de l’association.</p>
+
+				<p>En participant à cet événement, vous soutenez l’action de l’association “Les Films de Plein Air” et sa mission de promouvoir le cinéma d’auteur. Vous contribuez également à rendre accessible à tous les grands films du patrimoine cinématographique. Alors n’hésitez pas à vous inscrire et à venir profiter d’une soirée cinéma en plein air dans le Parc Monceau !</p>
+			</section>
+
+			<section id="news-feed">
+				<div class="news_feed__container">
+					<h2>Dernières news...</h2>
+					<div class="meta__feed__container">
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted June 18th 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted June 14th 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted June 12th 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted June 1st 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted May 30th 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted May 28th 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted May 26th 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+					</div>
+					<div class="instagram__feed__container">
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted yesterday
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted yesterday
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted June 17th 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted June 15th 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted June 13th 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__title">
+								<h3>Titre de la carte</h3>
+								<p>posted June 2nd 2023 at 12:00
+								</p>
+							</div>
+							<div class="card__image">
+								<img src="./assets/placeholder.png" alt="placeholder">
+							</div>
+							<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section id="movies">
+				<h2>Movies</h2>
+				<div class="schedule__container">
+					<div class="schedule__title">
+						<h3>Programmation</h3>
+						<p>5 au 8 août 2023</p>
+					</div>
+					<div class="schedule__content">
+						<div class="schedule__day">
+							<h4>Jeudi 5 août</h4>
+							<div class="cards__container">
+								<div class="card">
+									<div class="card__title">
+										<h3>Titre de la carte</h3>
+										<p>posted June 18th 2023 at 12:00
+										</p>
+									</div>
+									<div class="card__image">
+										<img src="./assets/placeholder.png" alt="placeholder">
+									</div>
+									<div class="card__content">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem commodi voluptate delectus excepturi, ducimus sequi perspiciatis sit placeat aliquam quasi impedit, dolorum omnis? Labore fugit porro iste voluptatibus vitae?</p>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="schedule__day">
+								<h4>Vendredi 6 août</h4>
+								<ul>
+									<li>20h00 : Film 3</li>
+									<li>22h00 : Film 4</li>
+								</ul>
+							</div>
+							<div class="schedule__day">
+								<h4>Samedi 7 août</h4>
+								<ul>
+									<li>20h00 : Film 5</li>
+									<li>22h00 : Film 6</li>
+								</ul>
+							</div>
+							<div class="schedule__day">
+								<h4>Dimanche 8 août</h4>
+								<ul>
+									<li>20h00 : Film 7</li>
+									<li>22h00 : Film 8</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+			<section id="map">
+				<div class="map__content">
+					<div class="map__title">
+						<h2>Localisation</h2>
+						<p>
+							Parc Monceau<br/>
+							Boulevard de Courcelles<br/>
+							75008 Paris
+						</p>
+					</div>
+					<iframe class="map__iframe" width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=2.3055571317672734%2C48.87772068690501%2C2.3115652799606328%2C48.88194000560294&amp;layer=mapnik"></iframe>
+					<small>
+						<a href="https://www.openstreetmap.org/#map=18/48.87983/2.30856&amp;layers=N">View Larger Map</a>
+					</small>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer__top">
+				<div class="logo">
+					<img src="./assets/favicon.ico" alt="camera_recorder">
+					<h3>Films de Plein Air</h3>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="left__content">
+					<a href="#home">Accueil</a>
+					<a href="#association">A propos de nous</a>
+					<a href="#news-feed">Actualités</a>
+					<a href="#movies">Les Films</a>
+					<a href="#localisation">Le lieu</a>
+				</div>
+				<div class="center__content">
+					<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+						<img class="social__media__logo" src="./assets/logos/facebook.png" alt="facebook">
+					</a>
+					<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+						<img class="social__media__logo" src="./assets/logos/twitter-x-regular.png" alt="twitter">
+					</a>
+					<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+						<img class="social__media__logo" src="./assets/logos/instagram.png" alt="instagram">
+					</a>
+				</div>
+				<div class="right__content">
+					<h3>Contact</h3>
+					<a href="mailto:" target="_blank" rel="noopener noreferrer">
+						<img class="social__media__logo mail" src="./assets/logos/mail.png" alt="mail">
+						contact@ffpa.com
+					</a>
+					<a href="tel:" target="_blank" rel="noopener noreferrer">
+						<img class="social__media__logo phone" src="./assets/logos/phone.png" alt="phone">
+						+33 1 23 45 67 89
+					</a>
+				</div>
+			</div>
+			<p>© 2023 - Festival Films de Plein Air</p>
+		</footer>
+	</body>
+</html>

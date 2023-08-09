@@ -1,0 +1,14 @@
+{
+	"name": "ocr_p3",
+	"version": "1.0.0",
+	"description": "OpenClassrooms P3 project. HTML & CSS website for outdoor movie theater.",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch ./sass/main.scss:./style/style.css"
+	},
+	"author": "anoerak",
+	"license": "MIT",
+	"dependencies": {
+		"sass": "^1.64.2"
+	}
+}
