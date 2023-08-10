@@ -1,5 +1,13 @@
+#.gitignore
+
+# Node
 /node_modules
-/sass
 package.json
 package-lock.json
-/.vscode
+
+# Sass
+.sass-cache
+/sass
+
+# VSCode
+.vscode
