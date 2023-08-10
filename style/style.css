@@ -276,7 +276,7 @@ html body main section#home .home__content .home__title span {
     font-size: 1.4rem;
   }
 }
-html body main section#home .home__content button {
+html body main section#home .home__content #fake-button {
   position: relative;
   padding: 1rem 2rem;
   border: none;
@@ -288,48 +288,135 @@ html body main section#home .home__content button {
   transition: all 0.2s ease-in-out;
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.95), 4px 4px 15px rgba(174, 174, 192, 0.5);
 }
-html body main section#home .home__content button:hover {
+html body main section#home .home__content #fake-button:hover {
   transform: translateY(-0.2rem);
   color: var(--color-quaternary);
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.95), 4px 4px 15px rgba(154, 154, 223, 0.31);
 }
-html body main section#home .home__content button:active {
+html body main section#home .home__content #fake-button:active {
   box-shadow: inset -5px -5px 8px rgba(255, 255, 255, 0.95), inset 4px 4px 10px rgba(174, 174, 192, 0.5);
   color: var(--color-quaternary);
 }
-html body main section#home .home__content button #reservation-checkbox {
-  position: absolute;
-  top: -3px;
-  left: 0;
-  opacity: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  padding: 0 5rem;
-  cursor: pointer;
-}
-html body main section#home .home__content button #reservation-checkbox:checked ~ dialog {
-  display: block;
-  pointer-events: all;
-}
-html body main section#home .home__content dialog {
-  display: none;
-  pointer-events: none;
+html body main section#home .home__content dialog#dialog {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50rem;
-  height: 30rem;
-  background-color: var(--color-white);
+  width: 60lvh;
+  height: 55lvh;
+  background-color: var(--color-black);
+  color: var(--color-white);
   border-radius: 1rem;
   padding: 3rem;
+  border: none;
 }
 @media (max-width: 600px) {
-  html body main section#home .home__content dialog {
-    width: 100%;
-    height: 100%;
+  html body main section#home .home__content dialog#dialog {
+    width: 90vw;
+    height: 90vh;
+    margin-top: 1rem;
     padding: 1rem;
+  }
+}
+html body main section#home .home__content dialog#dialog fieldset {
+  border-radius: 2rem;
+  padding: 2.5rem;
+}
+html body main section#home .home__content dialog#dialog fieldset legend {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+  html body main section#home .home__content dialog#dialog fieldset legend {
+    font-size: 1.6rem;
+  }
+}
+html body main section#home .home__content dialog#dialog fieldset form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 600px) {
+  html body main section#home .home__content dialog#dialog fieldset form label {
+    font-size: 1.4rem;
+  }
+}
+html body main section#home .home__content dialog#dialog fieldset form input {
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.1), 4px 4px 15px rgb(0, 0, 0);
+}
+html body main section#home .home__content dialog#dialog fieldset form input:focus {
+  outline: none;
+  box-shadow: inset -5px -5px 8px rgba(255, 255, 255, 0.1), inset 4px 4px 10px rgb(0, 0, 0);
+}
+@media (max-width: 600px) {
+  html body main section#home .home__content dialog#dialog fieldset form input {
+    font-size: 1.4rem;
+  }
+}
+html body main section#home .home__content dialog#dialog fieldset form select {
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.1), 4px 4px 15px rgb(0, 0, 0);
+}
+html body main section#home .home__content dialog#dialog fieldset form select:focus {
+  outline: none;
+  box-shadow: inset -5px -5px 8px rgba(255, 255, 255, 0.1), inset 4px 4px 10px rgb(0, 0, 0);
+}
+@media (max-width: 600px) {
+  html body main section#home .home__content dialog#dialog fieldset form select {
+    font-size: 1.4rem;
+  }
+}
+html body main section#home .home__content dialog#dialog fieldset form select option {
+  font-size: 1.6rem;
+}
+@media (max-width: 600px) {
+  html body main section#home .home__content dialog#dialog fieldset form select option {
+    font-size: 1.4rem;
+  }
+}
+html body main section#home .home__content dialog#dialog fieldset form #register-button {
+  position: relative;
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-black);
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.1), 4px 4px 15px rgb(0, 0, 0);
+}
+html body main section#home .home__content dialog#dialog fieldset form #register-button:hover {
+  transform: translateY(-0.2rem);
+  color: var(--color-quaternary);
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.1), 4px 4px 15px rgb(0, 0, 0);
+}
+html body main section#home .home__content dialog#dialog fieldset form #register-button:active {
+  box-shadow: inset -5px -5px 8px rgba(255, 255, 255, 0.1), inset 4px 4px 10px rgb(0, 0, 0);
+  color: var(--color-quaternary);
+}
+@media (max-width: 600px) {
+  html body main section#home .home__content dialog#dialog fieldset form #register-button {
+    font-size: 1.4rem;
   }
 }
 html body main section#home .home__content img {
