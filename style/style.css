@@ -32,6 +32,11 @@ html body {
     margin: 0;
   }
 }
+@media (max-width: 1080p) {
+  html body {
+    font-size: 1.4rem;
+  }
+}
 html body header {
   position: relative;
   z-index: 10;
@@ -52,6 +57,17 @@ html body header nav .logo {
   border-radius: 2rem;
   color: var(--color-white);
 }
+@media (max-width: 600px) {
+  html body header nav .logo {
+    max-width: 3rem;
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 1080px) {
+  html body header nav .logo {
+    max-width: 3.5rem;
+  }
+}
 html body header nav .menu {
   display: flex;
   justify-content: space-between;
@@ -62,6 +78,12 @@ html body header nav .menu {
 html body header nav .menu li {
   list-style: none;
   margin-left: 2rem;
+}
+html body header nav .menu li .sub-menu {
+  display: none;
+}
+html body header nav .menu li #association-tablet {
+  display: none;
 }
 html body header nav .menu li a {
   text-decoration: none;
@@ -78,7 +100,7 @@ html body header nav .menu li a:hover {
 html body header nav .menu li a:active {
   box-shadow: inset -5px -5px 8px rgba(255, 255, 255, 0.1), inset 4px 4px 10px rgb(0, 0, 0);
 }
-@media (max-width: 600px) {
+@media (max-width: 820px) {
   html body header nav .menu {
     display: none;
     position: absolute;
@@ -108,6 +130,23 @@ html body header nav .menu li a:active {
     box-shadow: inset -5px -5px 8px rgba(255, 255, 255, 0.95), inset 4px 4px 10px rgba(174, 174, 192, 0.5);
   }
 }
+@media (max-width: 1080px) {
+  html body header nav {
+    margin-right: 2rem;
+  }
+  html body header nav .menu {
+    gap: 2rem;
+  }
+  html body header nav .menu li #association-desktop {
+    display: none;
+  }
+  html body header nav .menu li #association-tablet {
+    display: block;
+  }
+  html body header nav .menu li a {
+    font-size: 1.6rem;
+  }
+}
 html body header .hamburger__menu__line {
   position: absolute;
   top: 2.5rem;
@@ -124,7 +163,7 @@ html body header .hamburger__menu__line::after {
   background-color: var(--color-black);
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 600px) {
+@media (max-width: 820px) {
   html body header .hamburger__menu__line,
   html body header .hamburger__menu__line::before,
   html body header .hamburger__menu__line::after {
@@ -153,7 +192,7 @@ html body header #hamburger-menu-checkbox {
   cursor: pointer;
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 820px) {
   html body header #hamburger-menu-checkbox {
     display: block;
     position: absolute;
@@ -201,6 +240,12 @@ html body main section#home {
     padding-top: 7rem;
   }
 }
+@media (max-width: 1250px) {
+  html body main section#home {
+    height: calc(100vh - 7rem);
+    padding-top: 7rem;
+  }
+}
 html body main section#home .home__content {
   width: calc(100% - 4rem);
   height: calc(100% - 15rem);
@@ -220,6 +265,14 @@ html body main section#home .home__content {
     height: calc(100% - 4rem);
   }
 }
+@media (max-width: 1250px) {
+  html body main section#home .home__content {
+    margin: 6rem 2rem 2rem 2rem;
+    padding: 2rem;
+    width: calc(100% - 8rem);
+    height: calc(100% - 12rem);
+  }
+}
 html body main section#home .home__content .home__title {
   text-align: center;
   padding: 0 15rem;
@@ -233,6 +286,12 @@ html body main section#home .home__content .home__title {
     width: 75%;
   }
 }
+@media (max-width: 1250px) {
+  html body main section#home .home__content .home__title {
+    padding: 0 2rem;
+    width: 95%;
+  }
+}
 html body main section#home .home__content .home__title h2 {
   font-size: 7.5rem;
   margin-bottom: 2rem;
@@ -240,6 +299,11 @@ html body main section#home .home__content .home__title h2 {
 @media (max-width: 600px) {
   html body main section#home .home__content .home__title h2 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 1250px) {
+  html body main section#home .home__content .home__title h2 {
+    font-size: 5rem;
   }
 }
 html body main section#home .home__content .home__title p {
@@ -267,6 +331,11 @@ html body main section#home .home__content .home__title p::before, html body mai
     font-size: 1.6rem;
   }
 }
+@media (max-width: 1250px) {
+  html body main section#home .home__content .home__title p {
+    font-size: 1.8rem;
+  }
+}
 html body main section#home .home__content .home__title span {
   font-size: 1.6rem;
   font-weight: 200;
@@ -274,6 +343,11 @@ html body main section#home .home__content .home__title span {
 @media (max-width: 600px) {
   html body main section#home .home__content .home__title span {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 1250px) {
+  html body main section#home .home__content .home__title span {
+    font-size: 1.6rem;
   }
 }
 html body main section#home .home__content #fake-button {
@@ -431,6 +505,12 @@ html body main section#home .home__content img {
     object-fit: cover;
   }
 }
+@media (max-width: 1080px) {
+  html body main section#home .home__content img {
+    width: 80%;
+    object-fit: cover;
+  }
+}
 html body main section#association {
   background-color: var(--color-black);
   color: var(--color-white);
@@ -458,6 +538,11 @@ html body main section#association p {
 @media (max-width: 600px) {
   html body main section#association p {
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 1080px) {
+  html body main section#association p {
+    font-size: 1.8rem;
   }
 }
 html body main section#association .main__container {
@@ -693,6 +778,11 @@ html body main section#news-feed .news_feed__container .meta__feed__container {
     width: 80%;
   }
 }
+@media (max-width: 1080px) {
+  html body main section#news-feed .news_feed__container .meta__feed__container {
+    width: 92.25%;
+  }
+}
 html body main section#news-feed .news_feed__container .instagram__feed__container {
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.95), 4px 4px 15px rgba(223, 154, 197, 0.31);
   border-radius: 1rem;
@@ -703,6 +793,11 @@ html body main section#news-feed .news_feed__container .instagram__feed__contain
   html body main section#news-feed .news_feed__container .instagram__feed__container {
     flex-direction: column;
     width: 80%;
+  }
+}
+@media (max-width: 1080px) {
+  html body main section#news-feed .news_feed__container .instagram__feed__container {
+    width: 92.25%;
   }
 }
 html body main section#news-feed .news_feed__container .meta__feed__container .card .card__content {
@@ -725,6 +820,11 @@ html body main section#movies h2 {
     font-size: 3rem;
   }
 }
+@media (max-width: 1080px) {
+  html body main section#movies h2 {
+    font-size: 3rem;
+  }
+}
 html body main section#movies .schedule__container {
   display: flex;
   flex-direction: column;
@@ -738,6 +838,11 @@ html body main section#movies .schedule__container {
     flex-direction: column;
   }
 }
+@media (max-width: 1080px) {
+  html body main section#movies .schedule__container {
+    flex-direction: column;
+  }
+}
 html body main section#movies .schedule__container p {
   font-size: 1.5rem;
   margin: 0;
@@ -745,6 +850,16 @@ html body main section#movies .schedule__container p {
 @media (max-width: 600px) {
   html body main section#movies .schedule__container p {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 1080px) {
+  html body main section#movies .schedule__container p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1080px) {
+  html body main section#movies .schedule__container .schedule__content {
+    width: 100%;
   }
 }
 html body main section#movies .schedule__container .schedule__day {
@@ -770,6 +885,11 @@ html body main section#movies .schedule__container .schedule__day h3 {
 @media (max-width: 600px) {
   html body main section#movies .schedule__container .schedule__day h3 {
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 1080px) {
+  html body main section#movies .schedule__container .schedule__day h3 {
+    font-size: 1.8rem;
   }
 }
 html body main section#movies .schedule__container .schedule__day .cards__container {
@@ -806,6 +926,13 @@ html body main section#movies .schedule__container .schedule__day .cards__contai
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 1080px) {
+  html body main section#movies .schedule__container .schedule__day .cards__container .card {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+}
 html body main section#movies .schedule__container .schedule__day .cards__container .card .card__title {
   width: calc(100% + 1rem);
   padding: 1rem;
@@ -821,6 +948,11 @@ html body main section#movies .schedule__container .schedule__day .cards__contai
     font-size: 1.6rem;
   }
 }
+@media (max-width: 1080px) {
+  html body main section#movies .schedule__container .schedule__day .cards__container .card .card__title h4 {
+    font-size: 1.8rem;
+  }
+}
 html body main section#movies .schedule__container .schedule__day .cards__container .card .card__title p {
   font-size: 1.75rem;
   color: var(--color-tertiary);
@@ -832,10 +964,27 @@ html body main section#movies .schedule__container .schedule__day .cards__contai
     font-size: 1rem;
   }
 }
+@media (max-width: 1080px) {
+  html body main section#movies .schedule__container .schedule__day .cards__container .card .card__title p {
+    font-size: 1.2rem;
+  }
+}
 html body main section#movies .schedule__container .schedule__day .cards__container .card .card__image img {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
+}
+@media (max-width: 600px) {
+  html body main section#movies .schedule__container .schedule__day .cards__container .card .card__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1080px) {
+  html body main section#movies .schedule__container .schedule__day .cards__container .card .card__image {
+    width: 100%;
+    height: 100%;
+  }
 }
 html body main section#movies .schedule__container .schedule__day .cards__container .card .card__content {
   width: 90%;

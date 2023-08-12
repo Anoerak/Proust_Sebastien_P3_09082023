@@ -22,13 +22,28 @@
 						<a href="#home">Accueil</a>
 					</li>
 					<li>
-						<a href="#association">A propos de nous</a>
+						<a id="association-desktop" href="#association">A propos de nous</a>
+						<a id="association-tablet" href="#association">L'association</a>
 					</li>
 					<li>
 						<a href="#news-feed">Actualités</a>
 					</li>
 					<li>
 						<a href="#movies">Programmation</a>
+						<ul class="sub-menu">
+							<li>
+								<a href="#0508">05 août</a>
+							</li>
+							<li>
+								<a href="#0608">06 août</a>
+							</li>
+							<li>
+								<a href="#0708">07 août</a>
+							</li>
+							<li>
+								<a href="#0808">08 août</a>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href="#map">Le lieu</a>
@@ -60,13 +75,20 @@
 								<input type="tel" name="phone" id="phone" placeholder="Votre téléphone" required>
 								<label for="date">Date</label>
 								<input type="date" name="date" id="date" required>
-								<label for="time">Heure</label>
-								<input type="time" name="time" id="time" required>
 								<label for="movie">Film</label>
 								<select name="movie" id="movie" required>
-									<option value="movie1">Film 1</option>
-									<option value="movie2">Film 2</option>
-									<option value="movie3">Film 3</option>
+									<option value="movie1">Blade Runner</option>
+									<option value="movie2">Matrix</option>
+									<option value="movie3">Pulp Fiction</option>
+									<option value="movie4">Back to the Future</option>
+									<option value="movie5">ET</option>
+									<option value="movie6">Raider of the Lost Ark</option>
+									<option value="movie7">Halloween</option>
+									<option value="movie8">Jaws</option>
+									<option value="movie9">Jurassic Park</option>
+									<option value="movie10">First Blood</option>
+									<option value="movie11">Star Wars: A New Hope</option>
+									<option value="movie12">Star Wars: The Empire Strikes Back</option>
 								</select>
 								<label for="seats">Nombre de places</label>
 								<input type="number" name="seats" id="seats" min="1" max="10" required>
